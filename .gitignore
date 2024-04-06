@@ -3,3 +3,5 @@ node_modules
 /target
 /pkg
 /wasm-pack.log
+
+walk_the_dog_*

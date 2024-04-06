@@ -32,6 +32,8 @@ console_error_panic_hook = "0.1.7"
 wee_alloc = { version = "0.4.2", optional = true }
 getrandom = { version = "0.2.13", features = ["js"] }
 rand = "0.8.5"
+futures = "0.3.30"
+wasm-bindgen-futures = "0.4.42"
 
 # The `web-sys` crate allows you to interact with the various browser APIs,
 # like the DOM.
@@ -43,7 +45,9 @@ features = [
   "Document",
   "Element",
   "HtmlCanvasElement",
+  "HtmlImageElement",
   "CanvasRenderingContext2d",
+  "Response",
 ]
 
 # These crates are used for running unit tests.
