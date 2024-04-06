@@ -1,8 +1,5 @@
-use std::task::Context;
-
 // prelude means '*' import allowed, it does not pollute namespace
 use rand::prelude::*;
-use rand::rngs;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 
