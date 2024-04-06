@@ -23,7 +23,7 @@ lto = true
 [dependencies]
 # The `wasm-bindgen` crate provides the bare minimum functionality needed
 # to interact with JavaScript.
-wasm-bindgen = "0.2.92"
+wasm-bindgen = { version = "0.2.92", features = ["serde-serialize"] }
 console_error_panic_hook = "0.1.7"
 
 # `wee_alloc` is a tiny allocator for wasm that is only ~1K in code size
@@ -34,6 +34,8 @@ getrandom = { version = "0.2.13", features = ["js"] }
 rand = "0.8.5"
 futures = "0.3.30"
 wasm-bindgen-futures = "0.4.42"
+serde = { version = "1.0.197", features = ["derive"] }
+serde-wasm-bindgen = "0.6.5"
 
 # The `web-sys` crate allows you to interact with the various browser APIs,
 # like the DOM.
